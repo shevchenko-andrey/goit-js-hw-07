@@ -10,8 +10,5 @@ function galerryMarcup({ preview, original, description }) {
 function createGalleryMurcup(items) {
   return items.map(galerryMarcup).join("");
 }
-new SimpleLightbox(".gallery .gallery_item", {
-  captionData: "alt",
-  captionDelay: 250,
-});
+new SimpleLightbox(".gallery a", { captionsData: "alt", captionDelay: 250 });
 console.log(galleryItems);
